@@ -1,6 +1,7 @@
 package com.yeahbutstill.test.service;
 
 import com.yeahbutstill.entity.TodoList;
+import com.yeahbutstill.repository.TodoListRepository;
 import com.yeahbutstill.repository.impl.TodoListRepositoryImpl;
 import com.yeahbutstill.service.TodoListService;
 import com.yeahbutstill.service.impl.TodoListServiceImpl;
@@ -8,6 +9,7 @@ import com.yeahbutstill.service.impl.TodoListServiceImpl;
 public class TodoListServiceTest {
     public static void main(String[] args) {
         testShowTodoList();
+        testAddTodoList();
     }
 
     public static void testShowTodoList() {
@@ -17,6 +19,17 @@ public class TodoListServiceTest {
         todoListRepository.data[2] = new TodoList("Belajar Java Standard Class");
 
         TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
+
+        todoListService.showTodoList();
+    }
+
+    public static void testAddTodoList() {
+        TodoListRepository todoListRepository = new TodoListRepositoryImpl();
+        TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
+
+        todoListService.addTodoList("Belajar Java Dasar");
+        todoListService.addTodoList("Belajar Java OOP");
+        todoListService.addTodoList("Belajar Java Standard Class");
 
         todoListService.showTodoList();
     }
