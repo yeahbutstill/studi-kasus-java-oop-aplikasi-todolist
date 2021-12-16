@@ -12,7 +12,7 @@ ada 4 Layer
 - Service -> Call Repository
 - Repository -> Call Database
 - Repositiry -> Use Entitiy
-
-## Membuat Entity(Representasi Data)
-## Membuat Repository
-## Membuat Service
+- Membuat Entity(Representasi Data)
+- Membuat Repository
+- Membuat Service
+- Membuat View
