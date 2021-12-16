@@ -5,7 +5,7 @@ import com.yeahbutstill.repository.TodoListRepository;
 
 public class TodoListRepositoryImpl implements TodoListRepository {
 
-    private TodoList[] data = new TodoList[10];
+    public TodoList[] data = new TodoList[10];
 
     @Override
     public TodoList[] getAll() {
@@ -14,7 +14,7 @@ public class TodoListRepositoryImpl implements TodoListRepository {
 
     @Override
     public void add(TodoList todoList) {
-        
+
     }
 
     @Override
