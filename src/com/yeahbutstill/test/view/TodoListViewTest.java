@@ -29,10 +29,9 @@ public class TodoListViewTest {
         TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
         TodoListView todoListView = new TodoListView(todoListService);
 
-        todoListService.addTodoList("Belajar Java Dasar");
-        todoListService.addTodoList("Belajar Java OOP");
-        todoListService.addTodoList("Belajar Java Standard Class");
-
-        todoListView.showTodoList();
+        todoListView.addTodoList();
+        todoListService.showTodoList();
+        todoListView.addTodoList();
+        todoListService.showTodoList();
     }
 }
