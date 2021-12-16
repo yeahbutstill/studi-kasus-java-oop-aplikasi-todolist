@@ -9,9 +9,22 @@ import com.yeahbutstill.view.TodoListView;
 public class TodoListViewTest {
     public static void main(String[] args) {
         testViewShowTodoList();
+        testViewAddTodoList();
     }
 
     public static void testViewShowTodoList() {
+        TodoListRepository todoListRepository = new TodoListRepositoryImpl();
+        TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
+        TodoListView todoListView = new TodoListView(todoListService);
+
+        todoListService.addTodoList("Belajar Java Dasar");
+        todoListService.addTodoList("Belajar Java OOP");
+        todoListService.addTodoList("Belajar Java Standard Class");
+
+        todoListView.showTodoList();
+    }
+
+    public static void testViewAddTodoList() {
         TodoListRepository todoListRepository = new TodoListRepositoryImpl();
         TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
         TodoListView todoListView = new TodoListView(todoListService);

@@ -14,7 +14,7 @@ public class TodoListView {
     public void showTodoList() {
         while (true) {
             todoListService.showTodoList();
-            
+
             System.out.println("Menu");
             System.out.println("1. Tambah");
             System.out.println("2. Hapus");
@@ -34,7 +34,14 @@ public class TodoListView {
     }
 
     public void addTodoList() {
+        System.out.println("MENAMBAH TODOLIST");
+        var todo = InputUtil.input("Todo (x Jika Batal)");
 
+        if (todo.equals("x")) {
+            // batal
+        } else {
+            todoListService.addTodoList(todo);
+        }
     }
 
     public void removeTodoList() {
