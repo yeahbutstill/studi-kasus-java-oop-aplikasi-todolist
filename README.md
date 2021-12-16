@@ -29,3 +29,5 @@ ada 4 Layer
 - Test View: Menampilkan TodoList
 - View: Menambahkan TodoList
 - Test View: Menambahkan TodoList
+- View: Menghapus TodoList
+- Test View: Menghapus TodoList
