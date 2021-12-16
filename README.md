@@ -14,3 +14,5 @@ ada 4 Layer
 - Repositiry -> Use Entitiy
 
 ## Membuat Entity(Representasi Data)
+## Membuat Repository
+## Membuat Service
