@@ -16,3 +16,6 @@ ada 4 Layer
 - Membuat Repository
 - Membuat Service
 - Membuat View
+- Implementasi Repository & Service: Menampilkan TodoList
+- Test Repository & Service: Menampilkan TodoList
+- 
