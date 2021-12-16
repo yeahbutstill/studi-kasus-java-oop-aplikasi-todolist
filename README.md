@@ -25,3 +25,5 @@ ada 4 Layer
 - Test Repository & Service: Menambah TodoList
 - Implementasi Repository & Service: Menghapus TodoList
 - Test Repository & Service: Menghapus TodoList
+- View: Menampilkan TodoList
+- 
