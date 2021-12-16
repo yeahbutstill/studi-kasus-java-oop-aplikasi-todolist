@@ -31,3 +31,4 @@ ada 4 Layer
 - Test View: Menambahkan TodoList
 - View: Menghapus TodoList
 - Test View: Menghapus TodoList
+- Test: Seluruh Aplikasi
